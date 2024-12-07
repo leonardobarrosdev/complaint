@@ -224,4 +224,4 @@ $RECYCLE.BIN/
 
 # End of https://www.toptal.com/developers/gitignore/api/django,database,linux,windows
 
-READM.md
+.idea/vcs.xml

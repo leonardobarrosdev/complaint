@@ -154,7 +154,7 @@ def list(request):
     return render(request,'ComplaintMS/Complaints.html',args)
 
 @login_required
-def slist(request):
+def solved_list(request):
     result = Complaint.objects.filter(user=request.user).exclude(Q(status='3') | Q(status='2'))
     args={'result': result}
     return render(request,'ComplaintMS/solvedcomplaint.html', args)

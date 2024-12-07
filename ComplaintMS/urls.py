@@ -18,7 +18,7 @@ from . import views
 from django.contrib.auth import views as auth_views
 
 urlpatterns=[
-    re_path(r'^$',views.index,name='index'),
+    re_path(r'^$',views.index, name='index'),
     re_path(r'^register/$', views.register, name='register'),
     re_path(r'^signin/$',auth_views.LoginView.as_view(template_name='ComplaintMS/signin.html'), name='signin'),
     re_path(r'^logout/$', views.logout_view, name='logout'),
@@ -27,14 +27,14 @@ urlpatterns=[
     re_path(r'^counter/$', views.counter, name='counter'),
     re_path(r'^solved/$', views.solved, name='solved'),
 
-    re_path(r'^login/$',views.login,name='login'),
-    re_path(r'^list/$',views.list,name='list'),
-    re_path(r'^pdf/$',views.pdf_view,name='view'),
-    re_path(r'^pdf_g/$',views.pdf_viewer,name='view'),
-    re_path(r'^aboutus/$',views.about_us,name='about_us'),
+    re_path(r'^login/$',views.login, name='login'),
+    re_path(r'^list/$',views.list, name='list'),
+    re_path(r'^pdf/$',views.pdf_view, name='view'),
+    re_path(r'^pdf_g/$',views.pdf_viewer, name='view'),
+    re_path(r'^aboutus/$',views.about_us, name='about_us'),
 
-    re_path(r'^login_redirect/$',views.login_redirect,name='login_redirect'),
-    re_path(r'^slist/$',views.slist,),
+    re_path(r'^login_redirect/$',views.login_redirect, name='login_redirect'),
+    re_path(r'^solveds/$',views.solved_list, name='solveds'),
 
     #path(r'^login2/$',views.login2,name='login2'),
 

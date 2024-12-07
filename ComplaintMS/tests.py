@@ -83,7 +83,7 @@ class ComplaintsTest(TestCase):
         self.assertEqual(response.status_code, 200)
 
 
-class SlistTest(TestCase):
+class SolvedsTest(TestCase):
     fixtures = [
         "ComplaintMS/fixtures/user_fixture.json",
         "ComplaintMS/fixtures/profile_fixture.json",
@@ -97,7 +97,7 @@ class SlistTest(TestCase):
 
     def test_list_success(self):
         result = Complaint.objects.filter(user=self.user).exclude(Q(status='3') | Q(status='2'))
-        response = self.client.get('/slist/')
+        response = self.client.get(reverse('solveds'))
         self.assertEqual(response.status_code, 200)
         self.assertIn('result', response.context)
         # self.assertEqual(response.context['result'], result)
