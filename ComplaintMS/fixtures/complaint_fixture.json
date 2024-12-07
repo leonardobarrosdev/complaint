@@ -1,0 +1,98 @@
+[
+{
+  "model": "ComplaintMS.complaint",
+  "pk": 1,
+  "fields": {
+    "subject": "Inadequated Class",
+    "user": 2,
+    "type_of_complaint": "ClassRoom",
+    "description": "Go not possible understend the content.",
+    "time": "2024-12-05",
+    "status": 3
+  }
+},
+{
+  "model": "ComplaintMS.complaint",
+  "pk": 2,
+  "fields": {
+    "subject": "Not return",
+    "user": 2,
+    "type_of_complaint": "Management",
+    "description": "The Manage not return a satisfactory response",
+    "time": "2024-12-05",
+    "status": 3
+  }
+},
+{
+  "model": "ComplaintMS.complaint",
+  "pk": 3,
+  "fields": {
+    "subject": "Late Grading",
+    "user": 3,
+    "type_of_complaint": "Academic",
+    "description": "My assignments are not being graded on time.",
+    "time": "2024-12-06",
+    "status": 3
+  }
+},
+{
+  "model": "ComplaintMS.complaint",
+  "pk": 4,
+  "fields": {
+    "subject": "Noisy Neighbors",
+    "user": 4,
+    "type_of_complaint": "Housing",
+    "description": "My neighbors are too loud at all hours of the night.",
+    "time": "2024-12-06",
+    "status": 3
+  }
+},
+{
+  "model": "ComplaintMS.complaint",
+  "pk": 5,
+  "fields": {
+    "subject": "Broken Equipment",
+    "user": 5,
+    "type_of_complaint": "Facilities",
+    "description": "The equipment in the gym is broken and needs repairs.",
+    "time": "2024-12-07",
+    "status": 3
+  }
+},
+{
+  "model": "ComplaintMS.complaint",
+  "pk": 6,
+  "fields": {
+    "subject": "Parking Issue",
+    "user": 6,
+    "type_of_complaint": "Transportation",
+    "description": "There are not enough parking spaces available on campus.",
+    "time": "2024-12-07",
+    "status": 3
+  }
+},
+{
+  "model": "ComplaintMS.complaint",
+  "pk": 7,
+  "fields": {
+    "subject": "Billing Error",
+    "user": 7,
+    "type_of_complaint": "Financial",
+    "description": "There is a mistake on my tuition bill that needs to be corrected.",
+    "time": "2024-12-08",
+    "status": 3
+  }
+},
+{
+  "model": "ComplaintMS.complaint",
+  "pk": 8,
+  "fields": {
+    "subject": "No Response from IT",
+    "user": 8,
+    "type_of_complaint": "Technology",
+    "description": "I have been waiting for a response from IT regarding my technical issue.",
+    "time": "2024-12-08",
+    "status": 3
+  }
+}
+]
