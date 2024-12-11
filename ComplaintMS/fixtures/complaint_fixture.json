@@ -94,5 +94,29 @@
     "time": "2024-12-08",
     "status": 3
   }
+},
+{
+  "model": "ComplaintMS.complaint",
+  "pk": 9,
+  "fields": {
+    "subject": "Slow Internet",
+    "user": 4,
+    "type_of_complaint": "Technical",
+    "description": "Network Issue",
+    "time": "2024-12-05",
+    "status": 1
+  }
+},
+{
+  "model": "ComplaintMS.complaint",
+  "pk": 10,
+  "fields": {
+    "subject": "Repair Request",
+    "user": 4,
+    "type_of_complaint": "Hardware",
+    "description": "Broken Laptop",
+    "time": "2024-12-05",
+    "status": 1
+  }
 }
 ]

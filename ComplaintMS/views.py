@@ -167,7 +167,11 @@ def all_complaints(request):
         if drop:
             complaint = complaint.filter(Q(type_of_complaint__icontains=drop))
         if comp:
-            complaint = complaint.filter(Q(type_of_complaint__icontains=comp)|Q(description__icontains=comp)|Q(subject__icontains=comp))
+            complaint = complaint.filter(
+                Q(type_of_complaint__icontains=comp) |
+                Q(description__icontains=comp) |
+                Q(subject__icontains=comp)
+            )
         if request.method=='POST':
                 cid = request.POST.get('cid2')
                 uid = request.POST.get('uid')
@@ -187,7 +191,6 @@ def all_complaints(request):
                      #testing
         else:
             forms=StatusUpdate()
-        #c=Complaint.objects.all().exclude(status='1')
         args={'c': complaint,'forms': forms, 'comp': comp}
         return render(request,'ComplaintMS/AllComplaints.html', args)
 
@@ -217,7 +220,6 @@ def solved(request):
              #testing
         else:
             forms=StatusUpdate()
-        #c=Complaint.objects.all().exclude(Q(status='3') | Q(status='2'))
         args={'c':c,'forms':forms,'comp':comp}
         return render(request,'ComplaintMS/solved.html',args)
 
